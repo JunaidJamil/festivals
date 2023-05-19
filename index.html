@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        body{background: linear-gradient(#e66465, #9198e5);
+        body{
+            background-color: skyblue;
             background-repeat: no-repeat;
             height: 548px;
         }
@@ -36,6 +37,8 @@
 </head>
 <body>
     <div class="box">
+        <h1>Festivals</h1>
+        <p>Enter date you got festivals</p>
     <input type="date" id="date">
      <button onclick="festivals()">find</button><br>
      <img id="img">
@@ -47,9 +50,9 @@
   let date = document.getElementById("date").value;
   console.log(typeof date)
   let upd = date.slice(5)
-  console.log(upd)
+  
   let i = document.getElementById("img").src=upd+".jpg"
-  console.log(i)
+  
 }
     </script>
 </body>
