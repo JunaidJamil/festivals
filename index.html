@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{background: linear-gradient(#e66465, #9198e5);
+            background-repeat: no-repeat;
+            height: 548px;
+        }
+       
+        #img{
+            border: 1px solid black;
+            width: 300px;
+            height: 300px;
+            border-radius: 20px;
+            border-style: none;
+        }
+        .box{
+            border: 1px solid black;
+            height: 400px;
+            width: 300px;
+            margin-left: 350px;
+            margin-top: 100px;
+            border-style: none;
+        }
+        #date{
+            margin-left: 60px;
+            margin-bottom: 20px;
+            width: 150px;
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+    <input type="date" id="date">
+     <button onclick="festivals()">find</button><br>
+     <img id="img">
+    </div>
+
+
+    <script>
+    function  festivals(){
+  let date = document.getElementById("date").value;
+  console.log(typeof date)
+  let upd = date.slice(5)
+  console.log(upd)
+  let i = document.getElementById("img").src=upd+".jpg"
+  console.log(i)
+}
+    </script>
+</body>
+</html>
